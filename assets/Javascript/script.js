@@ -61,12 +61,27 @@ $(function () {
 
 
 
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
+  // Added code to get any user input that was saved in localStorage and set
+  // the values of the corresponding textarea elements.
   
-  
+  // Functions primary purpose is to keep the text when the user refreshes page.
+  $('.time-block').each(function(){
+
+
+    // selects each tag with time block id and associates it w a variable.
+    var identifiedBlock = $(this).attr('id');
+
+    // selects each entry saved 
+    var localVal = localStorage.getItem(identifiedBlock);
+    // populates text into textarea with local variable if they match
+    // Otherwise if empty nothing happens
+    if (localVal !== null){
+      $(this).find('textarea').val(localVal);
+    }
+
+  })
+
+
   
   
   // Added code to display the current date in the header of the page.
@@ -81,5 +96,11 @@ $(function () {
   }
 
   
+//REPLACE LINES 94 and 38 tz('') to test the following timezones:
+// Pacific/Fiji
+// Pacific/Guadalcanal
+// Pacific/Pago_Pago
+// America/Hawaii
+// America/Los_Angeles
 
 });

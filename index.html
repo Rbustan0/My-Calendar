@@ -48,8 +48,7 @@
         </button>
       </div>
 
-      <!-- Example of a a present time block. The "present" class adds a red background color. -->
-      <div id="hour-10" class="row time-block present">
+      <div id="hour-10" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -57,8 +56,8 @@
         </button>
       </div>
 
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
-      <div id="hour-11" class="row time-block future">
+      <!-- Setting all to past for a cleaner startup -->
+      <div id="hour-11" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -67,7 +66,7 @@
       </div>
 
       <!-- Need to create new times for a loop to iterate through it through the dom. -->
-      <div id="hour-12" class="row time-block future">
+      <div id="hour-12" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -76,7 +75,7 @@
       </div>
 
       <!-- hour function follows 24 hour format so incrementing id -->
-      <div id="hour-13" class="row time-block future">
+      <div id="hour-13" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -84,7 +83,7 @@
         </button>
       </div>
 
-      <div id="hour-14" class="row time-block future">
+      <div id="hour-14" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -92,7 +91,7 @@
         </button>
       </div>
 
-      <div id="hour-15" class="row time-block future">
+      <div id="hour-15" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -100,7 +99,7 @@
         </button>
       </div>
 
-      <div id="hour-16" class="row time-block future">
+      <div id="hour-16" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
@@ -108,7 +107,7 @@
         </button>
       </div>
 
-      <div id="hour-17" class="row time-block future">
+      <div id="hour-17" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
